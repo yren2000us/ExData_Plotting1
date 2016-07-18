@@ -1,6 +1,5 @@
 # Plot 4
-png(filename = './figures/plot4.png', width = 480, height = 480, units='px')
-Sys.setlocale(category = "LC_ALL", locale = "english")
+png(filename = './plot4.png', width = 480, height = 480, units='px')
 par(mfrow = c(2, 2))
 plot(data$DateTime, data$Global_active_power, xlab = '', ylab = 'Global Active Power (kilowatt)', type = 'l')
 plot(data$DateTime, data$Voltage, xlab = 'datetime', ylab = 'Voltage', type = 'l')
